@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ghost chasing</title>
+		<link href="../style/mainframe.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body" onload="Confirm.render()">		
+		<div id = "dialogoverlay"></div>
+		<div id = "dialogbox">
+			<div id="image"></div>
+		</div>
+		<div class="total">
+			<div class="leftframe">
+				<img src="../image/mainframe-侧栏.png" alt="left frame" class="image" id="leftbackground">
+				<div class="counter" id="counter"><h1 id="time_counter"></h1></div>
+				<div class="specialbuttondiv">
+					<div class="specialbutton left" onclick="GameStart()"></div>
+					<div class="specialbutton center" onclick="StopTime()"></div>
+					<div class="specialbutton right" onclick="ResetTime()"></div>
+				</div>
+				<div class="personaldata">
+					<div class="personaldatadetail personone">
+						<p class="player_name" id="player_name1">Player1</p>
+						<p class="player_count" id="player_count1">Count: 0</p>
+					</div>
+					<div class="personaldatadetail persontwo">
+						<p class="player_name" id="player_name2">Player2</p>
+						<p class="player_count" id="player_count2">Count: 0</p>
+					</div>
+					<div class="personaldatadetail personthree">
+						<p class="player_name" id="player_name3">Player3</p>
+						<p class="player_count" id="player_count3">Count: 0</p>
+					</div>
+				</div>
+			</div>
+			<div class="rightframe">
+				<img src="../image/mainframe-right.png" alt="right frame" class="image" id="rightframebackground">
+				<div class="houseandghost one" style="height:24.5%">
+					<img src="../image/church.png" alt="house one" class="image" style="height:100%;width:100%">
+				</div>
+				<div class="houseandghost two" style="height:24.5%">
+					<img src="../image/church.png" alt="house two" class="image"style="height:100%;width:100%">
+				</div>
+				<div class="houseandghost three" style="height:24.5%">
+					<img src="../image/church.png" alt="house three" class="image"style="height:100%;width:100%">
+				</div>
+				<div class="houseandghost four" style="height:24.5%">
+					<img src="../image/church.png" alt="house four" class="image"style="height:100%;width:100%">
+				</div>
+				<div class="houseandghost Player1" id = "Player1">
+					<img src="../image/gameicon/redhat.png" alt="Player1" class="image">
+					<figcaption id="p1_fig"style="background-color:grey;color: black;opacity:0.8;">Player1</figcaption>
+				</div>
+				<div class="houseandghost Player2" id = "Player2">
+					<img src = "../image/gameicon/private.png" alt = "Player2" class = "image">
+					<figcaption id="p2_fig" style="background-color:grey;color: black;opacity:0.8;">Player2</figcaption>
+				</div>
+				<div class="houseandghost Player3" id = "Player3">
+					<img src = "../image/gameicon/grandmother.png" alt = "Player3" class = "image">
+					<figcaption id="p3_fig" style="background-color:grey;color: black;opacity:0.8;">Player3</figcaption>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>var exports = {};</script>
+	<script type="text/javascript" src="../scripts/CustomPrompt.js"></script>
+	<!-- <script type="text/javascript" src="../scripts/HTML_render.js"></script> -->
+	<script type="module" src="../scripts/Counter.js"></script>
+	<script type="module" src="../scripts/MoveAvatar.js"></script>
+	<!-- <script src = "../scripts/ghost.js"></script> -->
+</html>
